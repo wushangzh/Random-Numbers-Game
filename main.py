@@ -5,7 +5,7 @@ msgbox('欢迎来到猜数游戏!\n系统将在0-100之间取随机数，\n接�
        '猜数游戏', '开始吧！', 'num.png')
 
 
-def competition():
+def main():
     while True:
         num = random.randint(0, 100)
         msg = '输入要猜的数字：'
@@ -35,7 +35,7 @@ def competition():
 
 while True:
 
-    competition()
+    main()
 
     if ccbox('游戏结束！你想再来一次吗？', "提示", ['再来一次！', '退出吧！']):
         continue
