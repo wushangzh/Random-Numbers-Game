@@ -1,15 +1,17 @@
 import random
 from easygui import *
 
+msg = '输入要猜的数字：'
+title = '猜数游戏'
+
 msgbox('欢迎来到猜数游戏!\n系统将在0-100之间取随机数，\n接着就可以进行猜数了！',
-       '猜数游戏', '开始吧！', 'num.png')
+       title, '开始吧！', 'num.png')
 
 
 def main():
     while True:
         num = random.randint(0, 100)
-        msg = '输入要猜的数字：'
-        title = '猜数游戏'
+
         tms = 1
         while True:
             guess = integerbox(msg, title, 50, 0, 100, 'num.png')
